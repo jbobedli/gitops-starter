@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: platform-gitops
+  namespace: openshift-gitops
+  annotations:
+    "helm.sh/hook-weight": "5"
+spec:
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  description: >-
+    For development/staging scenarios. Applications will have a *NOSYNC*
+    exclude
+  destinations:
+    - name: in-cluster
+      namespace: '*'
+      server: 'https://kubernetes.default.svc'
+  sourceRepos:
+    - 'https://github.com/NTTData-HybridCloud/gitops-starter.git'
+    - 'https://github.com/NTTData-HybridCloud/platform-services.git'
+    - 'https://github.com/NTTData-HybridCloud/platform-services-resources.git'
+    - 'https://github.com/NTTData-HybridCloud/custom-images.git'
