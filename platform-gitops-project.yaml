@@ -17,7 +17,7 @@ spec:
       namespace: '*'
       server: 'https://kubernetes.default.svc'
   sourceRepos:
-    - 'https://github.com/NTTData-HybridCloud/gitops-starter.git'
-    - 'https://github.com/NTTData-HybridCloud/platform-services.git'
-    - 'https://github.com/NTTData-HybridCloud/platform-services-resources.git'
-    - 'https://github.com/NTTData-HybridCloud/custom-images.git'
+    - 'https://github.com/jbobedli/gitops-starter.git'
+    - 'https://github.com/jbobedli/platform-services.git'
+    - 'https://github.com/jbobedli/platform-services-resources.git'
+    - 'https://github.com/jbobedli/custom-images.git'

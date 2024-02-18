@@ -1,4 +1,4 @@
 cluster:
   name: dev
 source:
-  repourl: 'https://github.com/NTTData-HybridCloud/platform-services.git'
+  repourl: 'https://github.com/jbobedli/platform-services.git'

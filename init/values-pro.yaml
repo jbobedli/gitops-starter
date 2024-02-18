@@ -1,4 +1,4 @@
 cluster:
   name: pro
 source:
-  repourl: 'https://github.com/NTTData-HybridCloud/platform-services'
+  repourl: 'https://github.com/jbobedli/platform-services'
